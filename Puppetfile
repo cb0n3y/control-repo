@@ -17,3 +17,9 @@ mod 'java',
 
 mod 'base',
   :git    => 'https://github.com/cb0n3y/puppet-module-base.git'
+
+mod 'vim',
+  :git    => 'https://github.com/cb0n3y/puppet-module-vim.git'
+
+mod 'ssh',
+  :git    => 'https://github.com/cb0n3y/puppet-module-ssh.git'
