@@ -17,11 +17,6 @@ node default {
 
 }
 
-node 'agent.fritz.box' {
-    include vim
-    include ssh
-}
-
 node 'agent2.fritz.box' {
     include tomcat
     include vim
