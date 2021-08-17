@@ -21,7 +21,7 @@ node 'agent3.fritz.box' {
   }
   haproxy::balancermember {'agent1':
     listening_service => 'lb-01',
-    server_names      => 'agent2.fritz.box',
+    server_names      => 'agent1.fritz.box',
     ipaddresses       => '192.168.178.72',
     ports             => '8080',
     options           => 'check',
