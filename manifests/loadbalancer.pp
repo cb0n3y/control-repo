@@ -1,4 +1,4 @@
-node 'agent.fritz.box' {
+node 'agent3.fritz.box' {
   class {'ssh':
     permit_root_login       => 'yes',
     log_level               => 'INFO',
@@ -19,17 +19,17 @@ node 'agent.fritz.box' {
     ipaddress        => $::ipaddress,
     ports            => '80',
   }
-  haproxy::balancermember {'agent2':
+  haproxy::balancermember {'agent1':
     listening_service => 'lb-01',
     server_names      => 'agent2.fritz.box',
-    ipaddresses       => '192.168.178.75',
+    ipaddresses       => '192.168.178.72',
     ports             => '8080',
     options           => 'check',
   }
-  haproxy::balancermember {'agent3':
+  haproxy::balancermember {'agent2':
     listening_service => 'lb-01',
     server_names      => 'agent2.fritz.box',
-    ipaddresses       => '192.168.178.76',
+    ipaddresses       => '192.168.178.73',
     ports             => '8080',
     options           => 'check',
   }
