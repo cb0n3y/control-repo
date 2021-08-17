@@ -22,8 +22,3 @@ node 'agent2.fritz.box' {
     include vim
     include ssh
 }
-
-node 'agent3.fritz.box' {
-    include vim
-    include ssh
-}
