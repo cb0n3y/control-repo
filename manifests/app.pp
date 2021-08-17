@@ -1,8 +1,3 @@
-#node 'apache.fritz.box' {
-#    include vim
-#    include ssh
-#}
-
 node default {
     notify {'checkpoint_1':
         message  => "
@@ -17,8 +12,7 @@ node default {
 
 }
 
-node 'agent2.fritz.box' {
+node 'agent1.fritz.box', 'agent2.fritz.box' {
     include tomcat
-    include vim
     include ssh
 }
