@@ -13,6 +13,6 @@ node default {
 }
 
 node 'agent1.fritz.box', 'agent2.fritz.box' {
-    include tomcat
     include ssh
+    include tomcat
 }
