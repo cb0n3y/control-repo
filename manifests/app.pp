@@ -1,10 +1,10 @@
-node 'apache.fritz.box' {
-    include vim
-    include ssh
-}
+#node 'apache.fritz.box' {
+#    include vim
+#    include ssh
+#}
 
 node default {
-    notify {"checkpoint_1":
+    notify {'checkpoint_1':
         message  => "
 
             CHECKPOINT_1
@@ -28,12 +28,12 @@ node 'agent3.fritz.box' {
     include ssh
 }
 
-node 'agent4.fritz.box' {
-    include vim
-    include ssh
-}
+#node 'agent4.fritz.box' {
+#    include vim
+#    include ssh
+#}
 
-node 'dbs.fritz.box' {
-    include vim
-    include ssh
-}
+#node 'dbs.fritz.box' {
+#    include vim
+#    include ssh
+#}
