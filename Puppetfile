@@ -13,13 +13,13 @@ mod 'tomcat',
   :git    => 'https://github.com/cb0n3y/puppet-module-tomcat.git'
 
 mod 'java',
-  :git    => 'https://github.com/cb0n3y/puppet-java-module.git'
+  :git    => 'https://github.com/cb0n3y/puppet-module-java.git'
 
 mod 'base',
   :git    => 'https://github.com/cb0n3y/puppet-module-base.git'
 
-mod 'vim',
-  :git    => 'https://github.com/cb0n3y/puppet-module-vim.git'
+#mod 'vim',
+#  :git    => 'https://github.com/cb0n3y/puppet-module-vim.git'
 
 mod 'ssh',
   :git    => 'https://github.com/cb0n3y/puppet-module-ssh.git'
