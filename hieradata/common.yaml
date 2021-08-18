@@ -1,2 +1,5 @@
 ---
 message: "This node is using common data"
+
+tomcat::user: "tomcat"
+tomcat::group: "root"
