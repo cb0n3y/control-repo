@@ -1,3 +1,6 @@
+hiera_include('classes')
+
+
 node default {
     notify {'checkpoint_1':
         message  => "
