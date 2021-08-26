@@ -2,17 +2,17 @@
 version: 5
 defaults:
   data_hash: yaml_data
-  datadir: "/etc/puppetlabs/environments/%{environments}/hieradata"
+  datadir: "/etc/puppetlabs/environments/%{environment}/hieradata"
   
 hierarchy:
   - name: "Per-node data"
-    path: "nodes/%{ trusted.certname }.yaml"
+    path: "nodes/%{trusted.certname}.yaml"
 
   #- name: "Host specific configuration"
   #  path: "nodes/%{ facts.networking.fqdn }.yaml"
   
-  - name: "Operating system defaulta"
-    path: "os/%{ facts.os.name }.yaml"
+  - name: "Operating system default"
+    path: "os/%{facts.os.name}.yaml"
   
   - name: "Common data"
-    path: "common.yaml"
+    path: "/etc/puppetlabs/environments/%{environment}/hieradata/common.yaml"
