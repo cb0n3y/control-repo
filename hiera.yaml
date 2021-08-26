@@ -2,7 +2,7 @@
 version: 5
 defaults:
   data_hash: yaml_data
-  datadir: "/etc/puppetlabs/environments/%{environment}/hieradata"
+  datadir: "/etc/puppetlabs/environments/%{environments}/hieradata"
   
 hierarchy:
   - name: "Per-node data"
