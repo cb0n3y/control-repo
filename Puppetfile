@@ -21,7 +21,7 @@ mod "puppetlabs-mysql",       :latest
 mod 'base',
   :git    => 'https://github.com/cb0n3y/puppet-module-base.git'
 
-mod 'mailcatcher'
+mod 'mailcatcher',
   :git    => 'https://github.com/cb0n3y/mailcatcher.git'
 
 # mod 'vim',
