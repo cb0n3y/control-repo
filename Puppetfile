@@ -12,14 +12,14 @@ mod "puppetlabs-mysql",       :latest
 
 # Modules from Git
 # Examples: https://github.com/puppetlabs/r10k/blob/master/doc/puppetfile.mkd#examples
-# mod 'tomcat',
-#   :git    => 'https://github.com/cb0n3y/puppet-module-tomcat.git'
+mod 'tomcat',
+  :git    => 'https://github.com/cb0n3y/puppet-module-tomcat.git'
 
 # mod 'java',
 #   :git    => 'https://github.com/cb0n3y/puppet-module-java.git'
 
-mod 'mailcatcher',
-  :git    => 'https://github.com/cb0n3y/mailcatcher.git'
+# mod 'mailcatcher',
+#   :git    => 'https://github.com/cb0n3y/mailcatcher.git'
 
 # mod 'vim',
 #   :git    => 'https://github.com/cb0n3y/puppet-module-vim.git'
