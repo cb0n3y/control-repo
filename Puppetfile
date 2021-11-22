@@ -18,9 +18,6 @@ mod "puppetlabs-mysql",       :latest
 # mod 'java',
 #   :git    => 'https://github.com/cb0n3y/puppet-module-java.git'
 
-mod 'base',
-  :git    => 'https://github.com/cb0n3y/puppet-module-base.git'
-
 mod 'mailcatcher',
   :git    => 'https://github.com/cb0n3y/mailcatcher.git'
 
